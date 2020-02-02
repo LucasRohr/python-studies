@@ -1,5 +1,5 @@
 import unittest
-from common import sum_list
+from modules import sum_list
 
 
 class SumTest(unittest.TestCase):
