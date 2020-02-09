@@ -42,7 +42,7 @@ class TestGet(unittest.TestCase):
     # using patch as a context manager
 
     def test_get_thing_status_ok(self):
-        with patch(f'{functions}.requests', autospec=True) as requests_mock:
+        with patch(f'functions.requests', autospec=True) as requests_mock:
             requests_mock.get.return_value = get_mocked_response()
             result = get_thing()
             path = 'http://localhost/api/get'
